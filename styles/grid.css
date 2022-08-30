@@ -1,0 +1,43 @@
+.outer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.square,
+.rectangle:before {
+    grid-row: 1;
+    grid-column: 1;
+    margin-bottom: auto;
+}
+
+.rectangles {
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 1;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.rectangles::before {
+    content: '';
+}
+
+.square,
+p {
+    height: 50px;
+    border: solid;
+    margin: 3px;
+}
+
+p {
+    grid-column: auto / span 2;
+}
+
+.square {
+    aspect-ratio: 1/1;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    line-height: 0.8;
+    color: red;
+}
