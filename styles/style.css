@@ -46,7 +46,7 @@ header button {
     }
 }
 
-@media only screen and (min-width:663px) and (max-width: 992px) {
+@media only screen and (min-width:577px) and (max-width: 992px) {
     header button {
         width: 50%
     }
@@ -115,14 +115,17 @@ section {
     width: 100%;
 }
 
-@media only screen and (max-width: 662px) {
+#view-button {
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
     section {
         display: grid;
     }
 
     .match-menu {
         background: none;
-        margin-bottom: 10%;
     }
 
     .match-blog {
@@ -132,7 +135,7 @@ section {
 
 }
 
-@media only screen and (min-width:663px) and (max-width: 992px) {
+@media only screen and (min-width:577px) and (max-width: 992px) {
     section {
         display: grid;
     }
@@ -149,6 +152,12 @@ section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 5%;
+    }
+
+    #view-button {
+        display: block;
+        width: 20%;
+        margin: auto;
     }
 }
 
@@ -178,17 +187,16 @@ footer h1 {
 }
 
 .footer-menu span {
-    margin-left: 5%;
+    margin: 2% 2%;
 }
 
 @media screen and (max-width: 660px) {
     .footer-menu span {
         display: block;
-        margin: 2% 0;
     }
 }
 
-@media only screen and (min-width:663px) and (max-width: 992px) {
+@media only screen and (min-width:577px) and (max-width: 992px) {
 
     .footer-menu {
         display: flex;
